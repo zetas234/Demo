@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IVA Angola</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator">
+    <h1>Calculadora de IVA Angola</h1>
+
+    <label for="baseValue">Valor base em Kz</label>
+    <input
+      id="baseValue"
+      type="text"
+      inputmode="decimal"
+      placeholder="Ex: 10000 ou 10000,50"
+    >
+
+    <button id="calculateButton" type="button">Calcular</button>
+
+    <p id="warning" class="warning" aria-live="polite"></p>
+
+    <section id="result" class="result" aria-live="polite">
+      <p><strong>Valor base:</strong> <span id="baseResult">-</span></p>
+      <p><strong>IVA 14%:</strong> <span id="ivaResult">-</span></p>
+      <p><strong>Total com IVA:</strong> <span id="totalResult">-</span></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
